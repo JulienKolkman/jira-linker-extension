@@ -131,7 +131,9 @@
     const titleElement1 = document.querySelector(
       ".gh-header-title .js-issue-title",
     );
-    const titleElement2 = document.querySelector(".markdown-title");
+    const titleElement2 = document.querySelector(
+      '.markdown-title, [class^="markdownTitle__"], [class*=" markdownTitle__"]',
+    );
 
     let titleElement = null;
     if (titleElement1) {
